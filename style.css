@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(122, 122, 255);;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 400px;
+    margin: 200px auto;
+    text-align: center;
+}
+
+header p {
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+main p {
+    margin-top: 0;
+    font-size: 12px;
+}
+
+footer button {
+    display: inline-block;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(122, 122, 255);
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+footer button:hover {
+    background-color: rgb(255, 134, 91);
+}
+
+.modal-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background-color: rgba(15, 15, 15, 0.4);
+}
+
+.modal {
+    position: absolute;
+    width: 600px;
+    font-family: var(--font-family);
+    text-align: center;
+    background-color: black;
+    border-radius: 8px;
+    margin: 300px 0 0 50%;
+    transform: translateX(-50%);
+}
+
+#closeModal {
+    display: inline-block;
+    cursor: pointer;
+    margin: 8px 20px 0 100%;
+    transform: translateX(-100%);
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 25px;
+}
+
+#closeModal:hover {
+    color: red;
+}
+
+.modal p.title {
+    font-size:25px;
+    color: blueviolet;
+    margin: 0;
+}
+
+.modal p.content {
+    font-size:18px;
+    color: aqua;
+}
+
+.display-modal {
+    display: block;
+}
